@@ -1,0 +1,71 @@
+v1.0.2 Nov 28, 2018
+====================
+
+* Rebuild r 3.4.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162137194)
+
+* Rebuild r 3.5.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162137191)
+
+
+v1.0.1 Nov 07, 2018
+====================
+
+* adds f951 and f95 fortran compilers for various CRAN packages eg: hexbin
+  (https://www.pivotaltracker.com/story/show/161681667)
+
+v1.0.0 Oct 04, 2018
+====================
+
+* Add plumber as built-in R package
+  - Update shiny integration test to run working server
+  (https://www.pivotaltracker.com/story/show/160093403)
+
+* Merge pull request #3 from venkatk-25/parallel_pkg_install
+  Enable parallel install of packages to speed up staging
+
+v0.0.5 Aug 24, 2018
+====================
+
+* Fortran is available for packages that require it
+  (https://www.pivotaltracker.com/story/show/159083278)
+
+* All versions of r rebuilt with Shiny.
+  (https://www.pivotaltracker.com/story/show/159172951)
+
+* All versions of r built for cflinuxfs3.
+
+* Add r 3.5.1
+  (https://www.pivotaltracker.com/story/show/159252592)
+
+v0.0.4 Jun 19, 2018
+====================
+
+* Support for vendoring packages in vendor_r directory
+  (https://www.pivotaltracker.com/story/show/157700756)
+
+* Add r 3.5.0
+  (https://www.pivotaltracker.com/story/show/156985714)
+
+v0.0.3 Mar 21, 2018
+====================
+
+* Add r 3.4.4
+  (https://www.pivotaltracker.com/story/show/156004666)
+
+* Use manifest cache downloads
+  (https://www.pivotaltracker.com/story/show/155405429)
+
+v0.0.2 Mar 02, 2018
+====================
+
+* Include r 3.4.3 with rserve and forecast pre-installed
+  Do not install the packages before using them in fixtures
+  (https://www.pivotaltracker.com/story/show/155449812)
+
+v0.0.1 Feb 22, 2018
+====================
+
+Initial release

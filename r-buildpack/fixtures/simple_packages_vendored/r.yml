@@ -1,0 +1,6 @@
+---
+packages:
+  - packages:
+      - name: stringr
+      - name: jsonlite
+    num_threads: 2

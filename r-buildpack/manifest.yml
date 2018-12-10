@@ -1,0 +1,61 @@
+---
+language: r
+default_versions: []
+dependency_deprecation_dates: []
+dependencies:
+- name: r
+  version: 3.4.3
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.4.3-cflinuxfs2-bc9586c6.tgz
+  sha256: bc9586c6b1f532de165aa0537c60ace76277c109afeb64e8165cace04760d5fc
+  cf_stacks:
+  - cflinuxfs2
+- name: r
+  version: 3.4.4
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.4.4-cflinuxfs2-6fc83107.tgz
+  sha256: 6fc831079a1fc5f88da271987cce0a4746cefaf2979715c26a31ff558516c577
+  cf_stacks:
+  - cflinuxfs2
+  source: https://cran.cnr.berkeley.edu/src/base/R-3/R-3.4.4.tar.gz
+- name: r
+  version: 3.4.4
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.4.4-cflinuxfs3-90990b09.tgz
+  sha256: 90990b09b9eb0126ded3a8f91c31e2f8621ebad7f24d5c0fe6623b5b6b9deca9
+  cf_stacks:
+  - cflinuxfs3
+  source: https://cran.cnr.berkeley.edu/src/base/R-3/R-3.4.4.tar.gz
+- name: r
+  version: 3.5.0
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.5.0-cflinuxfs2-a4a2edab.tgz
+  sha256: a4a2edabd732b45bffbc374b6f4ea97b874b73567d4b843a12f5f2bfcfe61629
+  cf_stacks:
+  - cflinuxfs2
+- name: r
+  version: 3.5.1
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.5.1-cflinuxfs2-08168dea.tgz
+  sha256: '08168dea4bc4fd64d33b2043645c8a4c865227906321c00b118f581ae42ba16a'
+  cf_stacks:
+  - cflinuxfs2
+  source: https://cran.cnr.berkeley.edu/src/base/R-3/R-3.5.1.tar.gz
+- name: r
+  version: 3.5.1
+  uri: https://buildpacks.cloudfoundry.org/dependencies/r/r-v3.5.1-cflinuxfs3-d4af4a38.tgz
+  sha256: d4af4a38a7e86dcea752d79ee0ddf9e70b3d7610b7f06e43adb60cefc66e2c0e
+  cf_stacks:
+  - cflinuxfs3
+  source: https://cran.cnr.berkeley.edu/src/base/R-3/R-3.5.1.tar.gz
+pre_package: scripts/build.sh
+include_files:
+- CHANGELOG
+- CONTRIBUTING.md
+- ISSUE_TEMPLATE
+- LICENSE
+- NOTICE
+- PULL_REQUEST_TEMPLATE
+- README.md
+- VERSION
+- bin/detect
+- bin/compile
+- bin/supply
+- bin/finalize
+- bin/release
+- manifest.yml
