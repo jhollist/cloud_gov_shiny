@@ -8,17 +8,17 @@
 library(shiny)
 library(dplyr)
 library(DT)
-library(leaflet)
+#library(leaflet)
 
 ################################################################################
 #Maps Tab UI
 ################################################################################
-map_tab <- sidebarLayout(
-  sidebarPanel(selectInput('map_param', 'Variable to map:',
-                          c("Chlorophyll","Phycocyanin"),
-                          selected = c("Chlorophyll"))),
-  mainPanel(leafletOutput("map"))
-)
+#map_tab <- sidebarLayout(
+#  sidebarPanel(selectInput('map_param', 'Variable to map:',
+#                          c("Chlorophyll","Phycocyanin"),
+#                          selected = c("Chlorophyll"))),
+#  mainPanel(leafletOutput("map"))
+#)
 
 ################################################################################
 #Analysis Tab UI
@@ -59,7 +59,7 @@ shinyUI(fluidPage(
 
   # Sidebar with a slider input for number of bins
   tabsetPanel(
-    tabPanel("Maps", map_tab),
+    #tabPanel("Maps", map_tab),
     tabPanel("Analysis", analysis_tab),
     tabPanel("Data", data_tab)
     )

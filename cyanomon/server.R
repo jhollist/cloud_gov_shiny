@@ -8,7 +8,7 @@
 library(shiny)
 library(dplyr)
 library(DT)
-library(leaflet)
+#library(leaflet)
 
 dat<-read.csv("Data2014.csv",stringsAsFactors = FALSE)%>%
   filter(SampleLocation != "Other" ||
@@ -59,18 +59,18 @@ shinyServer(function(input, output) {
   #            c("Chlorophyll","Phycocyanin"),
   #            selected = c("Chlorophyll"))})
 
-  filtered_locs <- reactive({
-    locs<-locs[locs$Parameter == input$map_param,]
-    locs[order(locs$Value),]
-    })
-  colrmp <- colorRampPalette(c("black", "white"))
-  rmp <- colrmp(195)
-  output$map <- renderLeaflet({
-    leaflet(data = filtered_locs()) %>%
-      addTiles() %>%
-      addCircleMarkers(~Longitude,~Latitude,color = rmp)
+  #filtered_locs <- reactive({
+  #  locs<-locs[locs$Parameter == input$map_param,]
+  #  locs[order(locs$Value),]
+  #  })
+  #colrmp <- colorRampPalette(c("black", "white"))
+  #rmp <- colrmp(195)
+  #output$map <- renderLeaflet({
+  #  leaflet(data = filtered_locs()) %>%
+  #    addTiles() %>%
+  #    addCircleMarkers(~Longitude,~Latitude,color = rmp)
 
-  })
+  #})
 
   ##############################################################################
   #Analysis Tab
