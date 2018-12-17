@@ -1,3 +1,5 @@
+#As of 2018-12-17 this moved into R-User-Group/contributedCode
+
 # Notes on setting up shiny on cloud.gov via dockerfile
 
 1. install cloud foundry (if not already done) and log into cloud.gov with cloud foundry
@@ -54,5 +56,22 @@ web: R -f shiny.R
 library(shiny)
 runApp(host="0.0.0.0", port=strtoi(Sys.getenv("PORT")))
 ```
+5. Issues still to be worked out.
+  - cf ssh fails on EPA network
+    - It's available (<https://cloud.gov/docs/apps/using-ssh/>)
+    - Port 2222 appears to be blocked somewhere
+    - works fine on my home network
+  - External dependencies
+    - rgdal app is example of attempts
+    - uses the experimental apt-buildpack
+    - Might work for most, but gdal and rgdal are problems
+    - rgdal looks for gdal in /usr/lib or /usr/bin (can't remember which at the moment) but the apt-buildpack stashes these elsewher
+    - Fix is probably going to require installing rgdal differently
+      - https://stackoverflow.com/questions/34333624/trouble-installing-rgdal might help...  esepcially no 7 in selected answer.
+  - Speeding up deployment with vendored packages
+    - Made some progress
+    - make dir vendor_R/src/contrib in app
+    - use miniCRAN::makeRepo(pkgDep("pkg_name"),"vendor_r", type="source"")
+    - saves time on downloading pacakges as they are installed from local sources.
 
 
