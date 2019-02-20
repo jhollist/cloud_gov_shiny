@@ -6,7 +6,7 @@
 #
 
 library(shiny)
-library(sf)
+library(rgl)
 
 shinyServer(function(input, output) {
 
@@ -18,7 +18,7 @@ shinyServer(function(input, output) {
   output$mapselect <- renderUI({
     selectInput()})
 
-  output$map <- renderPlot({plot(iris)})
+  output$map <- renderPlot({plot(iris,main= require("rgl"))})
 
 })
 

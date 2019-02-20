@@ -1,4 +1,6 @@
 ---
-packages: 
-  - packages:
-      - name: sf
+packages:
+  - cran_mirror: https://cran.r-project.org
+    packages:
+      - name: rgl
+      - name: readr

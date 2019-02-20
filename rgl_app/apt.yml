@@ -1,10 +1,9 @@
 ---
 packages:
-- libgdal-dev 
-- libproj-dev 
-- libgeos-dev 
-- libudunits2-dev 
-- libv8-dev 
-- libcairo2-dev 
-- libnetcdf-dev
-- libmysqlclient-dev
+- libftgl2 
+- libcgal-dev 
+- libglu1-mesa-dev 
+- libglu1-mesa-dev 
+- libx11-dev 
+- libfreetype6-dev
+- libmagick++-dev
