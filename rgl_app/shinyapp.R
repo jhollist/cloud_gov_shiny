@@ -14,7 +14,7 @@ server <- (function(input, output) {
   
   output$plot <- renderRglwidget({
     rgl.open(useNULL=T)
-    scatter3d(x=cars$speed, y=cars$dist, z=cars$time, surface=FALSE, ellipsoid = TRUE)
+    plot3d(x=cars$speed, y=cars$dist, z=cars$time)
     rglwidget()
   })
 })   
