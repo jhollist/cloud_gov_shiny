@@ -20,10 +20,10 @@ https://ropenscilabs.github.io/r-docker-tutorial/
   
 - Or, could try resetting shiny to listen on 8080
   - Created new shiny-server.conf with LISTEN on 8080
-  - updated image with docker build -t simple_docker:newport .
-  - run locally docker run -p 8080:8080 simple_docker:newport
-  - docker tag f886bc173c6b jhollist/simple_docker:newport
-  - docker push jhollist/simple_docker
+  - updated image with docker build -t simple_docker:latest .
+  - run locally docker run -p 8080:8080 simple_docker:latest
+  - docker tag 61204e550e3b  jhollist/simple_docker:latest
+  - docker push jhollist/simple_docker:latest
   
 - now push
 cli: cf push simple_docker3 --docker-image jhollist/simple_docker:latest --docker-username jhollist
