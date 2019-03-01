@@ -1,4 +1,9 @@
 ---
+keys:
+- https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x089EBE08314DF160
+repos:
+- deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu bionic main 
+- deb-src http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu bionic main
 packages:
-- libudunits2-dev 
-- libv8-dev 
+- libproj-dev
+- libgdal-dev 

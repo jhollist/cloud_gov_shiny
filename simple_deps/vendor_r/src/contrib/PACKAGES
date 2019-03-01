@@ -1,0 +1,41 @@
+Package: lattice
+Version: 0.20-38
+Priority: recommended
+Depends: R (>= 3.0.0)
+Imports: grid, grDevices,
+   graphics, stats, utils
+Suggests: KernSmooth, MASS,
+   latticeExtra
+Enhances: chron
+License: GPL (>= 2)
+MD5sum:
+   f80724e04f6a18640aea0f18ef2626a9
+NeedsCompilation: yes
+
+Package: rgdal
+Version: 1.3-9
+Depends: R (>= 3.3.0),
+   methods, sp (>= 1.1-0)
+Imports: grDevices,
+   graphics, stats, utils
+LinkingTo: sp
+License: GPL (>= 2)
+MD5sum:
+   2f9970f4c454d87c796f84d96a1b0ab7
+NeedsCompilation: yes
+
+Package: sp
+Version: 1.3-1
+Depends: R (>= 3.0.0),
+   methods
+Imports: utils, stats,
+   graphics, grDevices,
+   lattice, grid
+Suggests: RColorBrewer,
+   rgdal (>= 0.8-7), rgeos
+   (>= 0.3-13), gstat,
+   maptools, deldir
+License: GPL (>= 2)
+MD5sum:
+   cb69b92d2d5c195ff1339f2326cfd842
+NeedsCompilation: yes

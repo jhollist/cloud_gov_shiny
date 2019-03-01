@@ -1,6 +1,7 @@
 ---
 applications:
 - name: simpledeps
+  memory: 1GB
   buildpacks: 
     - https://github.com/cloudfoundry/apt-buildpack
-    - https://github.com/cloudfoundry/r-buildpack 
+    - https://github.com/cloudfoundry/r-buildpack
