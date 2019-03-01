@@ -1,0 +1,6 @@
+---
+applications:
+- name: cyanomon
+  memory: 1GB
+  buildpacks: 
+  - https://github.com/cloudfoundry/r-buildpack.git 

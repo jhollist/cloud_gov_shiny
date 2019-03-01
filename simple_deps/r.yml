@@ -2,4 +2,6 @@
 packages:
   - cran_mirror: https://cran.r-project.org 
     packages:
-      - name: rfoaas
+      - name: praise 
+      - name: V8 
+      - name: units 
