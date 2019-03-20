@@ -1,6 +1,8 @@
 ---
 applications:
 - name: cyanomon
-  memory: 1GB
+  memory: 3GB
   buildpacks: 
   - https://github.com/cloudfoundry/r-buildpack.git 
+  env:
+    CF_STAGING_TIMEOUT: 25

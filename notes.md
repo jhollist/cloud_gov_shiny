@@ -61,6 +61,8 @@ runApp(host="0.0.0.0", port=strtoi(Sys.getenv("PORT")))
     - It's available (<https://cloud.gov/docs/apps/using-ssh/>)
     - Port 2222 appears to be blocked somewhere
     - works fine on my home network
+  - When using cf ssh and you want to see environment the app sees
+    - use`/tmp/lifecycle/shell` to initialize the env in your ssh session.
   - External dependencies
     - rgdal app is example of attempts
     - uses the experimental apt-buildpack
