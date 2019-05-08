@@ -4,6 +4,6 @@ applications:
   buildpacks: 
   - https://github.com/cloudfoundry/r-buildpack.git 
   stack: cflinuxfs3
-  memory: 3GB
+  memory: 2.5G
   env:
     CF_STAGING_TIMEOUT: 25
