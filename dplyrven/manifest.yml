@@ -1,9 +1,9 @@
 ---
 applications:
-- name: dplyrven
+- name: dplyrven2
   buildpacks: 
   - https://github.com/cloudfoundry/r-buildpack.git 
   stack: cflinuxfs3
-  memory: 2.5G
+  memory: 2560M
   env:
     CF_STAGING_TIMEOUT: 25
