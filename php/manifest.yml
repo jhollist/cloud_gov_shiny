@@ -1,0 +1,7 @@
+---
+applications:
+- name: php2
+  memory: 256M
+  buildpack: php_buildpack
+  routes: 
+  - route: shiny.epa.gov/jeff
