@@ -6,6 +6,7 @@ applications:
   stack: cflinuxfs3
   memory: 512M
   routes:
+  - route: shiny.epa.gov
   - route: shiny.epa.gov/iris
   env:
     CF_STAGING_TIMEOUT: 15

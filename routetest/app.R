@@ -12,6 +12,9 @@ library(shiny)
 # Define UI for application that draws a histogram
 ui <- shinyUI(fluidPage(
   
+  tags$link(rel = "stylesheet",
+            type = "text/css", href = "style.css"),
+  
   # Application title
   titlePanel("One file test app for shiny.epa.gov"),
   
