@@ -1,11 +1,11 @@
 ---
 applications:
-- name: routetest
+- name: routetest2
   buildpacks: 
   - https://github.com/cloudfoundry/r-buildpack.git 
   stack: cflinuxfs3
   memory: 3G
   routes:
-  - route: shiny.epa.gov/iris
+  - route: shiny.epa.gov/iris2
   env:
     CF_STAGING_TIMEOUT: 25

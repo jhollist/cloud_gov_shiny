@@ -10,10 +10,10 @@
 library(shiny)
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
+ui <- fluidPage(
 
     # Application title
-    titlePanel("Test app: dplyr for cloud.gov"),
+    titlePanel("Two file test app for shiny.epa.gov"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
@@ -31,4 +31,4 @@ shinyUI(fluidPage(
             plotOutput("scatterPlot")
         )
     )
-))
+)
