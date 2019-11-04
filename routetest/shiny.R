@@ -1,2 +1,2 @@
 library(shiny)
-runApp(host="0.0.0.0", port=strtoi(Sys.getenv("PORT")))
+runApp(appDir = ".", host="0.0.0.0", port=strtoi(Sys.getenv("PORT")))
